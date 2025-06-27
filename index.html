@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quote Generator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen font-sans">
+
+  <div id="container" class="bg-blue-900 text-white p-8 rounded-2xl shadow-lg w-full max-w-md text-center">
+    <h1 class="text-2xl font-bold mb-4">Quote Generator App</h1>
+
+    <p id="quoteDisplay" class="text-lg mb-6 transition duration-500 ease-in-out transform scale-100 opacity-100">
+      Quote is Loading...
+    </p>
+
+    <form id="quoteForm" class="flex flex-col items-center gap-3">
+      <input type="text" id="input" placeholder="Input your quote here..." class="w-full px-4 py-2 rounded-md text-black" />
+      <button type="submit" id="button" class="bg-yellow-400 text-blue-900 font-bold px-4 py-2 rounded-md hover:bg-yellow-500 hover:scale-105 transition">
+        Add Quote
+      </button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
